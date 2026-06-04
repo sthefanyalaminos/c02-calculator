@@ -1,6 +1,6 @@
 // Global UI helper object for rendering calculator results and managing interface behavior.
 // Contains utility methods for formatting and DOM control, plus render methods
-// that build HTML strings for results, comparisons, and carbon credit estimates.
+// that build HTML strings for results and comparisons.
 var UI = {
     formatNumber: function(number, decimals) {
         // Format a number with the given number of decimal places.
@@ -125,32 +125,7 @@ var UI = {
         return html;
     },
 
-    renderCarbonCredits: function(creditsData) {
-        // Build a carbon credits summary with credit count, estimated cost, and info.
-        var credits = creditsData.credits || 0;
-        var price = creditsData.price || {
-            min: 0,
-            max: 0,
-            average: 0
-        };
-
-        return "<div class=\"carbon-credits__grid\">" +
-            "<div class=\"carbon-credits__card\">" +
-            "<h3 class=\"carbon-credits__title\">Créditos necessários</h3>" +
-            "<p class=\"carbon-credits__value\">" + this.formatNumber(credits, 4) + "</p>" +
-            "<p class=\"carbon-credits__meta\">1 crédito = 1000 kg CO₂</p>" +
-            "</div>" +
-            "<div class=\"carbon-credits__card\">" +
-            "<h3 class=\"carbon-credits__title\">Preço estimado</h3>" +
-            "<p class=\"carbon-credits__value\">" + this.formatCurrency(price.average) + "</p>" +
-            "<p class=\"carbon-credits__meta\">Faixa: " + this.formatCurrency(price.min) + " – " + this.formatCurrency(price.max) + "</p>" +
-            "</div>" +
-            "</div>" +
-            "<div class=\"carbon-credits__info-box\">" +
-            "<p class=\"carbon-credits__info-text\">Os créditos de carbono representam ações de compensação que ajudam a neutralizar emissões de CO₂. Eles são usados para apoiar projetos de reflorestamento, energia renovável e conservação ambiental.</p>" +
-            "</div>" +
-            "<button type=\"button\" class=\"carbon-credits__button\">🛒 Compensar Emissões</button>";
-    },
+    
 
     showLoading: function(buttonElement) {
         if (!buttonElement) {

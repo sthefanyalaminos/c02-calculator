@@ -232,8 +232,7 @@ body {
 }
 
 .results,
-.comparison,
-.carbon-credits {
+.comparison {
     background: var(--white);
     border-radius: var(--radius-lg);
     box-shadow: var(--shadow-md);
@@ -242,8 +241,7 @@ body {
 }
 
 .results__content,
-.comparison__content,
-.carbon-credits__content {
+.comparison__content {
     min-height: 4rem;
 }
 
@@ -397,54 +395,6 @@ body {
     gap: 1rem;
 }
 
-/* Carbon credits */
-.carbon-credits__grid,
-.carbon-credits_grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.carbon-credits__card,
-.carbon-credits_card {
-    background: var(--white);
-    padding: 1.5rem;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow-sm);
-}
-
-.carbon-credits__label { font-size: 0.875rem; color: var(--text-light); margin-bottom: 0.5rem; }
-.carbon-credits__value { font-size: 2.5rem; font-weight: 800; color: var(--primary); }
-.carbon-credits__hint { font-size: 0.75rem; color: var(--text-light); margin-top: 0.5rem; }
-
-.carbon-credits__info-box,
-.carbon-credits_info {
-    border: 2px dashed rgba(59,130,246,0.25);
-    background: rgba(59,130,246,0.04);
-    padding: 1rem;
-    border-radius: var(--radius);
-    margin-bottom: 1rem;
-}
-
-.carbon-credits__info-box strong { font-weight: 800; color: var(--info); }
-.carbon-credits__info-box p { line-height: 1.6; }
-
-.carbon-credits__button,
-.carbon-credits_btn {
-    width: 100%;
-    background: var(--primary);
-    color: var(--white);
-    padding: 1rem;
-    border-radius: var(--radius);
-    font-weight: 800;
-    border: none;
-    cursor: pointer;
-    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.carbon-credits__button:hover { background: var(--secondary); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
-
 /* Fade-in animation for sections */
 @keyframes fadeln {
     from { opacity: 0; transform: translateY(20px); }
@@ -452,14 +402,10 @@ body {
 }
 
 .results,
-.comparison,
-.carbon-credits { animation: fadeln 0.5s ease-out; }
+.comparison { animation: fadeln 0.5s ease-out; }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-    .carbon-credits__grid,
-    .carbon-credits_grid { grid-template-columns: 1fr; }
-
     .results_value { font-size: 1.125rem; }
 
     .calculator-form__transport-label { padding: var(--spacing-sm); }

@@ -1,6 +1,5 @@
 // Global Calculator object for CO2 emissions calculations.
-// Provides methods to compute emissions, compare transport modes,
-// calculate carbon credits, and estimate credit pricing.
+// Provides methods to compute emissions and compare transport modes.
 var Calculator = {
     calculateEmission: function(distanceKm, transportMode) {
         // Get the emission factor (kg CO2 per km) for the specified transport mode.
@@ -51,27 +50,6 @@ var Calculator = {
         return {
             savedKg: Math.round(savedKg * 100) / 100,
             percentage: Math.round(percentage * 100) / 100
-        };
-    },
-
-    calculateCarbonCredits: function(emissionKg) {
-        // Convert kilograms of CO2 into carbon credits.
-        // One credit equals KG_PER_CREDIT kg of CO2.
-        var credits = emissionKg / CONFIG.CARBON_CREDIT.KG_PER_CREDIT;
-        return Math.round(credits * 10000) / 10000;
-    },
-
-    estimateCreditPrice: function(credits) {
-        // Estimate the market value of carbon credits using min/max price ranges.
-        // Returns minimum, maximum, and average price in BRL.
-        var minPrice = credits * CONFIG.CARBON_CREDIT.PRICE_MIN_BRL;
-        var maxPrice = credits * CONFIG.CARBON_CREDIT.PRICE_MAX_BRL;
-        var averagePrice = (minPrice + maxPrice) / 2;
-
-        return {
-            min: Math.round(minPrice * 100) / 100,
-            max: Math.round(maxPrice * 100) / 100,
-            average: Math.round(averagePrice * 100) / 100
         };
     }
 };

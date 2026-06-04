@@ -36,7 +36,6 @@
             UI.showLoading(submitButton);
             UI.hideElement("results");
             UI.hideElement("comparison");
-            UI.hideElement("carbon-credits");
 
             setTimeout(function() {
                 try {
@@ -44,8 +43,6 @@
                     var carBaselineEmission = Calculator.calculateEmission(distance, "car");
                     var savings = Calculator.calculateSavings(emission, carBaselineEmission);
                     var comparisonModes = Calculator.calculateAllModes(distance);
-                    var credits = Calculator.calculateCarbonCredits(emission);
-                    var priceEstimate = Calculator.estimateCreditPrice(credits);
 
                     var resultData = {
                         origin: origin,
@@ -56,14 +53,8 @@
                         saving: savings
                     };
 
-                    var creditData = {
-                        credits: credits,
-                        price: priceEstimate
-                    };
-
                     var resultsContainer = document.getElementById("results-content");
                     var comparisonContainer = document.getElementById("comparison-content");
-                    var carbonCreditsContainer = document.getElementById("carbon-credits-content");
 
                     if (resultsContainer) {
                         resultsContainer.innerHTML = UI.renderResults(resultData);
@@ -73,13 +64,8 @@
                         comparisonContainer.innerHTML = UI.renderComparision(comparisonModes, transportMode);
                     }
 
-                    if (carbonCreditsContainer) {
-                        carbonCreditsContainer.innerHTML = UI.renderCarbonCredits(creditData);
-                    }
-
                     UI.showElement("results");
                     UI.showElement("comparison");
-                    UI.showElement("carbon-credits");
                     UI.scrollToElement("results");
                 } catch (error) {
                     console.error("Erro durante o cálculo:", error);

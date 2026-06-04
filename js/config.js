@@ -1,5 +1,5 @@
 // Global configuration object for the emissions calculator.
-// Includes emission factors, transport mode metadata, carbon credit rules,
+// Includes emission factors, transport mode metadata,
 // and helper methods for UI initialization.
 var CONFIG = {
     EMISSION_FACTORS: {
@@ -32,11 +32,6 @@ var CONFIG = {
         }
     },
 
-    CARBON_CREDIT: {
-        KG_PER_CREDIT: 1000,
-        PRICE_MIN_BRL: 50,
-        PRICE_MAX_BRL: 150
-    },
 
     populateDatalist: function() {
         var cities = RoutesDB.getAllCities();
