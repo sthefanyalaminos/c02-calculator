@@ -27,4 +27,33 @@ O projeto foi desenvolvido com o objetivo de promover consciência ambiental, of
 - **HTML5** - estrutura semântica e acessível
 - **CSS3** - estilização responsiva com metodologia BEM
 - **JavaScript (ES6+)** - lógica de cálculo, manipulação de DOM e interatividade
+
+---
+## Estrutura do Projeto
+ 
+```
+calculadora-co2/
+│
+├── index.html              # Página principal da aplicação
+│
+├── css/
+│   └── style.css           # Estilos da aplicação
+│
+└── js/
+    ├── routes-data.js      # Base de dados de rotas e distâncias
+    ├── config.js           # Configurações e fatores de emissão 
+    ├── calculator.js       # Lógica de cálculo de CO₂
+    ├── ui.js               # Manipulação da interface do usuário
+    └── app.js              # Inicialização e orquestração
+```
+ 
+---
+## Como Usar
+ 
+1. Digite a **cidade de origem** no campo correspondente;
+2. Digite a **cidade de destino**;
+3. A **distância será preenchida automaticamente**, ou ative a opção de inserção manual;
+4. Selecione o **modo de transporte** desejado;
+5. Clique em **"Calcular Emissão"**;
+6. Veja o resultado e a comparação com outros modos.
 ---
