@@ -1,4 +1,6 @@
 # Calculadora de Emissão de CO₂
+
+[Translate to English](https://github.com/sthefanyalaminos/c02-calculator/blob/main/README_EN.md)
  
 > Ferramenta web interativa para estimar o impacto ambiental de viagens, ajudando usuários a tomar decisões de transporte mais conscientes e sustentáveis.
 
