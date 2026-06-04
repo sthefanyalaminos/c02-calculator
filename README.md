@@ -2,6 +2,10 @@
  
 > Ferramenta web interativa para estimar o impacto ambiental de viagens, ajudando usuários a tomar decisões de transporte mais conscientes e sustentáveis.
 
+<div align="right">
+<a href="https://sthefanyalaminos.github.io/c02-calculator/">Clique aqui para acessar!</a>
+</div>
+
 <div align="center">
 <img src="assets/readme_img1.png" height="400px" width="auto">
 <img src="assets/readme_img2.png" height="400px" width="auto">
