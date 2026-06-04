@@ -284,3 +284,183 @@ body {
         grid-template-columns: repeat(4, minmax(0, 1fr));
     }
 }
+
+/* Results cards styling */
+.results_card,
+.results_card__container {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-md);
+}
+
+.results_icon {
+    font-size: 2.5rem;
+    margin-right: 1rem;
+}
+
+.results_data {
+    display: flex;
+    flex-direction: column;
+}
+
+.results_label {
+    font-size: 0.875rem;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.results_value {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--text);
+}
+
+.results_savings {
+    border-left: 4px solid var(--accent);
+    background: rgba(52, 211, 153, 0.06);
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Compatibility with existing BEM classes used in templates */
+.results_card__title { font-size: 0.9rem; color: var(--text-light); margin-bottom: 0.25rem; }
+.results_card__value { font-size: 1.25rem; font-weight: 700; color: var(--text); }
+.results_card__text { color: var(--text-light); }
+
+/* Comparison section */
+.comparison_item,
+.comparision_item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #e6e7eb;
+    border-radius: var(--radius);
+    transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+}
+
+.comparison_item--selected,
+.comparision_item--selected {
+    border-color: var(--primary);
+    background: rgba(16, 185, 129, 0.06);
+}
+
+.comparison_header,
+.comparision_item__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.comparison_mode { display: flex; align-items: center; gap: 0.75rem; }
+.comparison_icon,
+.comparision_item__icon { font-size: 1.5rem; }
+.comparison_label,
+.comparision_item__title { font-weight: 700; }
+
+.comparison_badge,
+.comparision_item__badge {
+    display: inline-block;
+    height: 20px;
+    background: var(--primary);
+    color: var(--white);
+    padding: 0 0.5rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    line-height: 20px;
+}
+
+.comparison_stats { text-align: right; }
+.comparison_emission { font-weight: 700; font-size: 1.125rem; }
+.comparison_percentage { font-size: 0.875rem; color: var(--text-light); }
+
+.comparison_bar-container,
+.comparision_item__progress-bar { width: 100%; height: 12px; background: #f3f4f6; border-radius: 999px; overflow: hidden; }
+.comparison_bar,
+.comparision_item__progress-fill { height: 100%; border-radius: 999px; transition: width 0.5s ease; }
+
+.comparison_tip,
+.comparision_tip-box,
+.comparision_tip-box__text {
+    background: rgba(59,130,246,0.06);
+    border-left: 4px solid var(--info);
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Carbon credits */
+.carbon-credits__grid,
+.carbon-credits_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.carbon-credits__card,
+.carbon-credits_card {
+    background: var(--white);
+    padding: 1.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.carbon-credits__label { font-size: 0.875rem; color: var(--text-light); margin-bottom: 0.5rem; }
+.carbon-credits__value { font-size: 2.5rem; font-weight: 800; color: var(--primary); }
+.carbon-credits__hint { font-size: 0.75rem; color: var(--text-light); margin-top: 0.5rem; }
+
+.carbon-credits__info-box,
+.carbon-credits_info {
+    border: 2px dashed rgba(59,130,246,0.25);
+    background: rgba(59,130,246,0.04);
+    padding: 1rem;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+
+.carbon-credits__info-box strong { font-weight: 800; color: var(--info); }
+.carbon-credits__info-box p { line-height: 1.6; }
+
+.carbon-credits__button,
+.carbon-credits_btn {
+    width: 100%;
+    background: var(--primary);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: var(--radius);
+    font-weight: 800;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carbon-credits__button:hover { background: var(--secondary); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+
+/* Fade-in animation for sections */
+@keyframes fadeln {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.results,
+.comparison,
+.carbon-credits { animation: fadeln 0.5s ease-out; }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carbon-credits__grid,
+    .carbon-credits_grid { grid-template-columns: 1fr; }
+
+    .results_value { font-size: 1.125rem; }
+
+    .calculator-form__transport-label { padding: var(--spacing-sm); }
+}
