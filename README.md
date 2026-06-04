@@ -2,9 +2,9 @@
  
 > Ferramenta web interativa para estimar o impacto ambiental de viagens, ajudando usuários a tomar decisões de transporte mais conscientes e sustentáveis.
 
-<img src="assets/readme_img1.png"></img>
-<img src="assets/readme_img2.png"></img>
-<img src="assets/readme_img3.png"></img>
+<img src="assets/readme_img1.png" height="280px" width="auto">
+<img src="assets/readme_img2.png" height="280px" width="auto">
+<img src="assets/readme_img3.png" height="280px" width="auto">
 ---
 A **Calculadora de Emissão de CO₂** é uma aplicação front-end que simula o impacto ambiental de deslocamentos, estimando a quantidade de carbono emitida com base em fatores como distância percorrida, modal de transporte e perfil do trajeto.
  
