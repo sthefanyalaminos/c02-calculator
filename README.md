@@ -3,9 +3,9 @@
 > Ferramenta web interativa para estimar o impacto ambiental de viagens, ajudando usuários a tomar decisões de transporte mais conscientes e sustentáveis.
 
 <div align="center">
-<img src="assets/readme_img1.png" height="300px" width="auto">
-<img src="assets/readme_img2.png" height="300px" width="auto">
-<img src="assets/readme_img3.png" height="300px" width="auto">
+<img src="assets/readme_img1.png" height="400px" width="auto">
+<img src="assets/readme_img2.png" height="400px" width="auto">
+<img src="assets/readme_img3.png" height="400px" width="auto">
 </div>
 
 ---
