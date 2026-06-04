@@ -56,4 +56,12 @@ calculadora-co2/
 4. Selecione o **modo de transporte** desejado;
 5. Clique em **"Calcular Emissão"**;
 6. Veja o resultado e a comparação com outros modos.
+
 ---
+## Motivação
+ 
+Com o crescimento das preocupações ambientais, entender o impacto das nossas escolhas de deslocamento é um passo importante para a sustentabilidade. Este projeto busca tornar essa informação acessível e visual, estimulando a reflexão sobre alternativas de transporte com menor pegada de carbono.
+
+---
+## Autoria
+Desenvolvido por Sthefany Alaminos, durante o Bootcamp CI&T – Do Prompt ao Agente, realizado pela DIO.
