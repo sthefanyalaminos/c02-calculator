@@ -246,6 +246,12 @@ body {
 }
 
 .footer {
+    background: var(--white);
+    box-shadow: var(--shadow-md);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    margin: var(--spacing-lg) auto var(--spacing-md);
+    max-width: 1040px;
     text-align: center;
     color: var(--text-light);
     padding: var(--spacing-md) var(--spacing-sm) var(--spacing-xl);
