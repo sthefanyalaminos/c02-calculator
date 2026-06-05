@@ -420,9 +420,4 @@ body {
     .footer {
     background: none;
     box-shadow: none;
-    padding: none;
-    
-    text-align: center;
-    color: var(--text-light);
-    padding: var(--spacing-md) var(--spacing-sm) var(--spacing-xl);
 }
