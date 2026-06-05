@@ -251,7 +251,7 @@ body {
     padding: var(--spacing-lg);
     border-radius: var(--radius-lg);
     margin: var(--spacing-lg) auto var(--spacing-md);
-    max-width: 1040px;
+    max-width: 65rem;
     height: 10px;
     text-align: center;
     color: var(--text-light);
