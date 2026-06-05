@@ -421,7 +421,7 @@ body {
     background: none;
     box-shadow: none;
     padding: none;
-    border-radius: none;
+    
     text-align: center;
     color: var(--text-light);
     padding: var(--spacing-md) var(--spacing-sm) var(--spacing-xl);
